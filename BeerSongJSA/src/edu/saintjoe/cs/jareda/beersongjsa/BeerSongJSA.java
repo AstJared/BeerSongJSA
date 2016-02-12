@@ -5,8 +5,8 @@ public class BeerSongJSA{
 	public static void main(String[] args) {
 		int beerNum = 99;
 		String word = "bottles";
-		while (beerNum > 0) {
-			if (beerNum ==1) {
+		while (beerNum > 0) { // While there are still bottles on the wall do this.
+			if (beerNum ==1) { // Correct our output once there is only one bottle.
 				word = "bottle"; 
 			}
 			System.out.println(beerNum + " " + word + " of beer on the wall");
@@ -14,9 +14,16 @@ public class BeerSongJSA{
 			System.out.println("Take one down.");
 			System.out.println("Pass it around.");
 			beerNum = beerNum - 1;
-			if (beerNum == 0) {
-				System.out.println("No more bottles of beer on the wall");
+			if (beerNum ==1) { // Correct our output once there is only one bottle.
+				word = "bottle";
+			}
+			if (beerNum > 0) {
 				
+				System.out.println(beerNum + " " + word + " of beer on the wall");	
+				
+			} else {
+				System.out.println("No more bottles of beer on the wall");	
+			}
 			
 				
 			}
@@ -24,4 +31,4 @@ public class BeerSongJSA{
 
 	}
 
-}
+
